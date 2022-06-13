@@ -14,6 +14,6 @@ COPY requirements.txt .
 # install dependencies
 RUN pip install -r requirements.txt
 
-
 # command to run on container start
+#CMD ["flask", "run", "--host", "0.0.0.0:8081"]
 CMD [ "python3", "./app.py" ]
